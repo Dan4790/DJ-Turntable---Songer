@@ -1,0 +1,696 @@
+/** {
+border:3px dashed white;
+}*/
+img {
+  max-width:100%;
+}
+body {
+  font-family: Verdana;
+  background: linear-gradient(to right, #280463, #1300e8);
+  margin:0;
+  padding:0;
+}
+
+header, nav, main, footer, aside, article, fig2, form{
+   border-radius:5px;
+}
+
+header {
+    grid-area:header;
+    background:#000000
+;
+    text-align:
+}
+
+.headerpic {
+    grid-area:headerpic;
+    padding:5px;
+    height:5vmax;
+    animation: logo .5s;
+  
+}
+
+
+.headertext {
+  grid-area:headertext;
+  text-align:center;
+}
+.headerwrapper {
+  display:grid;
+  justify-items: center;
+  align-items:center;
+  grid-template-columns:25% auto;
+  grid-template-areas:
+  "headerpic headertext";
+}
+
+
+header h1 {
+    
+     font-size:5vw;
+     color:#ffffff;
+     font-family:Impact;
+     text-shadow: 2px 2px 5px #3217ff;
+     margin: 0;
+     animation: words 1.5s;
+     
+     
+}
+
+header h3 {
+    font-size:3vw;
+    color:#ffffff;
+    margin:0;
+    animation: words 2s;
+}
+nav {
+    grid-area:nav;
+    background:#4562a7
+;
+    }
+
+nav li {
+    padding:10px 10px;
+    list-style-type:none;
+    font-size:1.5em;
+    font-weight:bold;
+    
+}
+
+nav a {
+    text-decoration:none;
+    color:#ffffff;
+}
+nav a:hover {
+    text-shadow: 2px 2px 5px #3217ff;
+}
+
+main {
+    grid-area:main;
+    background:#000000;
+    color:#FFFFFF;
+    padding:5px;
+    
+    
+    }
+
+main h2 {
+    text-align:center;
+    margin:1%;
+    
+}
+
+main p {
+    color:#FFFFFF;
+    padding:1% 2%;
+    font-size:1em;
+}
+
+main a {
+ color:navy;
+}
+
+footer {
+    grid-area:footer;
+    background:#400057;
+    padding:5px;
+    text-align:center;
+    }
+
+footer p {
+     font-size:1em;
+     color:#ffffff;
+     margin:0;
+}
+aside {
+  grid-area:aside;
+  background-color: #FFFFFF;
+  
+
+}
+
+aside h2 {
+color:#000000;
+text-align:center;
+}
+aside li {
+font-size:1.25em;
+padding: 10px 0;
+color:#000000;
+}
+article {
+ color:white;
+ background-color:#0000b0;
+}
+article h2 {
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #0000b0;
+}
+.top {
+  grid-area:top
+}
+.middle {
+  grid-area:middle;
+}
+.bottom {
+  grid-area:bottom;
+}
+.studypic {
+  margin:auto;
+  display:grid;
+}
+.fig1 {
+  grid-area:fig1;
+}
+.fig2 {
+  grid-area:fig2;
+  background-color:#ffffff;
+}
+.headings {
+  font-weight:bold;
+  text-decoration:underline;
+}
+section {
+  grid-area:section;
+}
+figure {
+  margin:0;/*Figure has margin if you don't specify this otherwise*/
+  text-align: center;
+}
+figcaption {
+  padding:5px;
+  color:#0000b0;
+  font-weight:bold;
+}
+figure img {
+  margin-top:16px;
+  max-width:75%;
+  border: 2px solid #0000b0;
+  transition: all .5s ease-in-out;
+}
+figure img:hover {
+  transform: scale(1.1);
+}
+
+
+@keyframes logo {
+   0% {
+      opacity: 0;
+      transform:  translatey(-1em);
+   }
+   100% {
+      opacity: 1;
+      transform: translatey(0);
+   }
+}
+@keyframes words {
+   0% {
+      opacity: 0;
+      transform: translateX(1em);
+   }
+    50% {
+      opacity: .5;
+      transform: translateY(.1em);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+
+audio {
+ max-width: 100%;
+}
+video {
+  width:480px;
+  max-width:100%;
+  min-height:180px;
+  height:auto;
+}
+video[poster] {
+  object-fit:cover;
+}
+.video1, .video2, .audio1, .audio2 {
+    margin:0;
+    display: grid;  /*This needs to be set or it won't center*/
+    justify-content:space-around;
+}
+.video1 {
+  grid-area:video1;
+}
+.video2 {
+  grid-area:video2;
+}
+.audio1 {
+  grid-area:audio1;
+}
+.audio2 {
+  grid-area:audio2;
+}
+form {
+    background-color:#0000FF;
+    width:90%;
+    margin:auto;
+    color:black;
+    padding:10px;
+}
+input {
+  margin: 1px 0 10px 0;
+}
+.call {
+    border-radius:5px;
+    text-align:center;
+    background-color:#0000b0;
+    width:60%;
+    padding: 5px;
+    margin:10px auto 0 auto;
+}
+ .call p{
+    color:#ffffff;
+    font-size:1.5em;
+    padding:0;
+    margin:0;
+    width:60%;
+    background-color: #a4c4fe;
+    color: #FFFFFF
+}
+
+ .button {
+ padding: 5px;
+ background-color: #a4c4fe;
+ color: #0000b0;
+ }
+
+    .homeab {
+      grid-area:homeab;
+      
+      
+    }
+    .homec {
+      grid-area:homec;
+      font-size:3em;
+    }
+      
+     .homed {
+      grid-area:homed;
+    }
+    
+    .homee {
+      grid-area:homee;
+    }
+    .homef {
+      grid-area:homef;
+    }
+
+      .homepic1 {
+        grid-area:homepic1;
+      }
+      
+      .homepic2 {
+        grid-area:homepic2;
+      }
+      .homepic3 {
+        grid-area:homepic3;
+      }
+#contacttext p{
+  margin:0;
+  padding:0;
+  
+}
+.heading
+{
+  text-align: center;
+  font-style: italic;
+  font-size: 50px;
+}
+.gold {
+  grid-area:gold;
+}
+.silver {
+  grid-area:silver;
+}
+.platinum {
+  grid-area:platinum;
+}
+
+.nestedgrid2 img {
+  width:300px;
+  width:300px;
+  max-width:100%;
+}
+.nestedgrid2 h1 {
+  text-align:center;
+}
+.price {
+  margin-top:1em;
+  list-style-type:none;
+}
+.weddings {
+  grid-area:weddings;
+}
+.celebrations {
+  grid-area:celebrations;
+}
+.events {
+  grid-area:events;
+  
+}
+.occasions {
+  grid-area:occasions;
+}
+.reviews {
+  grid-area:reviews;
+  text-align: center;
+}
+.reviewlist li {
+  margin-bottom:10px;
+}
+.reviewimg {
+  height:15rem;
+  max-width:auto;
+  margin: 5% auto;
+}
+
+.nestedgrid3 h1 {
+  text-align:center;
+}
+.nestedgrid3 img {
+  max-height:300px;
+}
+.pic1 {
+  grid-area:pic1;
+ 
+}
+.pic2 {
+  grid-area:pic2;
+
+}
+.pic3 {
+grid-area:pic3;
+
+}
+.pic4 {
+grid-area:pic4;
+
+}
+.pic5 {
+grid-area:pic5;
+
+}
+.pic6 {
+grid-area:pic6;
+
+}
+/*---------------------------Mobile Layout----------------------------*/
+.container1 { /*for tests*/
+  display: grid;
+  grid-template-columns:1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+    }
+    .container2 { /*for index.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+    }
+   .container3 { /*for blog.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "top"
+    "middle"
+    "bottom"
+    "footer";
+}
+.container4 {
+display:grid;
+grid-template-columns:auto 1fr;
+margin:1%;
+grid-gap:.5em;
+grid-template-areas:
+"header header"
+"nav main"
+"fig2 fig2"
+"footer footer";
+}
+
+
+.nestedgrid {
+display:grid;
+align-items:start;
+grid-template-columns:1fr;
+grid-template-areas:
+"homeab"
+"homec"
+"audio1"
+"video1"
+"audio2"
+"video2"
+"homed"
+"homepic1"
+"homee"
+"homepic2"
+"homef"
+"homepic3";
+  }
+  
+  
+.nestedgrid2 {
+  display:grid;
+  grid-template-columns:100%;
+  grid-template-areas:
+  "silver"
+  "gold"
+  "platinum";
+}
+
+
+/*This stuff is for the hamburger menu*/
+.toggleNav {
+    display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
+    text-align:center;
+    font-size:1.5em;
+    font-weight:bold;
+    padding:10px;
+    }
+
+#flex-nav ul {
+    display: none; /*jQuery toggles the nav from to this class to the .open when clicked*/
+    text-align:center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+ 
+#flex-nav ul.open { /*.open is the class that gets toggled when clicked (with help from the jQuery code)*/
+    display:grid;
+    }
+    
+#flex-nav li {
+    padding-left:10px;
+    padding-top:10px;
+    }
+
+
+/*-----------------------Tablet Media Query------------------------*/
+@media only screen and (min-width: 480px)  {
+.container1 { /*for later*/
+  display:grid;
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    }
+    .container2 { /*for index.html*/
+  display: grid;
+  grid-template-columns:auto 1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "nav main"
+    "top top"
+    "middle middle"
+    "bottom bottom"
+    "footer footer";
+    }
+    .container3 { /*for blog.html*/
+  display: grid;
+  grid-template-columns:auto 1fr;
+  grid-gap:.5em;
+  margin: 1%;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "top top"
+    "middle middle"
+    "bottom bottom"
+    "footer footer";
+}
+
+.container4 {
+display:grid;
+grid-template-columns:auto 1fr;
+margin:1%;
+grid-gap:.5em;
+grid-template-areas:
+"header header"
+"nav main"
+"fig2 fig2"
+"footer footer";
+}
+
+.nestedgrid {
+display:grid;
+align-items:start;
+grid-template-columns:1fr 1fr;
+grid-template-areas:
+"homeab homeab"
+"homec homec"
+"audio1 video1"
+"audio2 video2"
+"homed homee"
+"homepic1 homepic2"
+"homef homef"
+"homepic3 homepic3";
+  }
+
+.nestedgrid2 {
+  display:grid;
+  grid-template-columns:100%;
+  grid-template-areas:
+  "silver"
+  "gold"
+  "platinum";
+}
+
+
+
+
+/* Below will change from hamburger menu to side navigation*/
+  
+.toggleNav {
+    display: none; /*Makes the hamburger icon with the word "Menu" to disappear at this screen size*/
+  }
+  
+#flex-nav ul {
+    display:grid;
+    text-align:left;
+  }
+
+#flex-nav li {
+    padding-left:10px;
+    padding-top:10px;
+  }
+
+}
+
+/*-----------------------Desktop Media Query------------------------*/
+@media only screen and (min-width: 1200px)  {
+
+.container1 { /*for later*/
+  display:grid;
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    }
+
+    
+.container2 { /*for index.html*/
+  display: grid;
+  grid-template-columns:auto 1fr 25%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+    }
+    .container3 { /*for blog.html*/
+  display: grid;
+  grid-template-columns:auto 1fr 1.5fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header header"
+    "nav main top"
+    "nav main middle"
+    "nav main bottom"
+    "footer footer footer";
+   }
+
+.container4 {
+display:grid;
+grid-template-columns:auto 1fr;
+margin:1%;
+grid-gap:.5em;
+grid-template-areas:
+"header header"
+"nav main"
+"fig2 fig2"
+"footer footer";
+}
+.nestedgrid {
+display:grid;
+align-items:start;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-areas:
+"homeab homeab homeab"
+"homec audio1 video1"
+"homec audio2 video2"
+"homed homee homef"
+"homepic1 homepic2 homepic3";
+  }
+.nestedgrid2 {
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-areas:
+  "silver gold platinum";
+}
+.nestedgrid3 {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas:
+  "weddings celebrations"
+  "events occasions"
+  "reviews reviews";
+}
+.nestedgrid4 {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas:
+  "homeab homeab"
+  "pic1 pic2"
+  "pic3 pic4"
+  "pic5 pic6";
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+      animation: none !important;
+      transition: none !important;
+      }
+}
+
